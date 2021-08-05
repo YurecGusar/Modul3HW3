@@ -14,7 +14,7 @@ namespace Modul3HW3
             var secondClass = new SecondClass();
 
             firstClass.ShowDelegat += Show;
-            firstClass.ShowDelegat.Invoke(secondClass.Calc(firstClass.Pow, 2, 2).Invoke(2));
+            firstClass.ShowDelegat?.Invoke(secondClass.Calc(firstClass.Pow, 2, 2).Invoke(2));
         }
 
         private void Show(bool result)
