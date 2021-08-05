@@ -15,7 +15,7 @@ namespace Modul3HW3
             return x * y;
         }
 
-        private void OnHandlerForShow(bool status)
+        public void OnHandlerForShow(bool status)
         {
             ShowDelegat.Invoke(status);
         }

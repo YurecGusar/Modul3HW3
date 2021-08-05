@@ -16,7 +16,7 @@ namespace Modul3HW3
             return Result;
         }
 
-        public bool Result(int num)
+        private bool Result(int num)
         {
             return _powResult % num == 0;
         }
