@@ -17,7 +17,7 @@ namespace Modul3HW3
 
         public void OnHandlerForShow(bool status)
         {
-            ShowDelegat.Invoke(status);
+            ShowDelegat?.Invoke(status);
         }
     }
 }
