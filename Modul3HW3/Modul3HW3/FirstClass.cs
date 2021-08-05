@@ -8,16 +8,11 @@ namespace Modul3HW3
 {
     public class FirstClass
     {
-        public event Action<bool> Act;
+        public Action<bool> ShowDelegat { get; set; }
 
         public int Pow(int x, int y)
         {
             return x * y;
-        }
-
-        private void OnHandler(bool status)
-        {
-            Act?.Invoke(status);
         }
     }
 }
